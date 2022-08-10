@@ -37,6 +37,19 @@ The first pixel has the following value RGB(72,105,33), so the script will read 
 - 105 -> i
 - 33  -> !
 
+## Instructions
+### Text to image conversion
+1. Run the script **text_to_image_converter.py**
+2. Type input file name including .txt extension
+3. Type output image name including .png extension
+4. Wait the script to finish the conversion
+
+### Image to text conversion
+1. Run the script **image_to_text_converter.py**
+2. Type input image name including .png extension
+3. Type output text file name including .txt extension
+4. Wait the script to finish the conversion
+
 ## Important remarks
 **This script doesn't work for every character** in the world!
 As I mentioned earlier every value inside the RGB tuple has a range **(0 -> 255)** so only characters which
