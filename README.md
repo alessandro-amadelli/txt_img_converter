@@ -22,6 +22,7 @@ given the string "Hi!", the program extrapolates the values:
 - H -> 72
 - i -> 105
 - ! -> 33
+
 and then generates the RGB tuple: RGB(72,105,33)
 This will represent the color of the first pixel of the image so, each pixel will contain 3 characters
 of the original text.
