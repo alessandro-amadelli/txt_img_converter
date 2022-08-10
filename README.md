@@ -2,7 +2,8 @@
 ## This utility allows you to convert a text into an image and vice-versa
 
 ### How the conversion is done
-Every text character corresponds to a specific unicode value, eg:
+Every text character corresponds to a specific unicode value.
+**Eg:**
 - A -> 65
 - B -> 66
 - ...
@@ -16,11 +17,11 @@ are integer numbers in range (0,255).
 #### Text to image conversion
 The script **text_to_image_converter.py** reads every character in the input file, convert it
 into his corresponding unicode value and loads the obtained value inside a pixel.
-Eg:
+**Eg:**
 given the string "Hi!", the program extrapolates the values:
-H -> 72
-i -> 105
-! -> 33
+- H -> 72
+- i -> 105
+- ! -> 33
 and then generates the RGB tuple: RGB(72,105,33)
 This will represent the color of the first pixel of the image so, each pixel will contain 3 characters
 of the original text.
@@ -29,11 +30,11 @@ of the original text.
 This conversion is done by the **image_to_text_converter.py** script that basically executes the 
 opposite operation performed by the previous one.
 The script reads every pixel's RGB color and extrapolates 3 characters from it.
-Eg:
+**Eg:**
 The first pixel has the following value RGB(72,105,33), so the script will read the characters:
-72  -> H
-105 -> i
-33  -> !
+- 72  -> H
+- 105 -> i
+- 33  -> !
 
 ## Important remarks
 **This script doesn't work for every character** in the world!
